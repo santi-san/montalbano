@@ -118,6 +118,8 @@ header nav {
     background-repeat: no-repeat;
     background-size: 100%;
     color: #202945;
+    height: 750px;
+    overflow: hidden;
 }
 .hashtag-offer {
     font-size: 6.25rem;
@@ -204,6 +206,8 @@ header nav {
     color: #fff;
     font-weight: normal;
     background-color: #eaf7e5;
+    height: 794px; 
+    overflow: hidden;
 }
 .container-historia{
     padding: 4.375rem;
@@ -227,6 +231,8 @@ header nav {
     background-image: url(../images/background/bg-pedidos.png);
     background-repeat: no-repeat;
     color: #202945;
+    height: 552px; 
+    overflow: hidden;
 }
 #pedidos p {
     font-size: 4.688rem;
@@ -246,9 +252,65 @@ header nav {
     background-image: url(../images/background/bg-footer.png);
     background-repeat: no-repeat;
     background-color: #202945;
-
+    height: 550px; 
+    overflow: hidden;
     color: #202945;
 }
 #redes h1 {
     font-size: 4.375rem;
+}
+
+
+@media screen and (max-width: 1366px) {
+    header {
+        height: 1093px;
+    }
+    .initial-cup,.initial-cover {
+        height: 500px;
+    }
+    .initial-icecream{
+        height: 470px;
+    }
+    .cup-path {
+        top: 18px;
+        clip-path: polygon(117.34% 92.83%, 117.5% 0.43%, 23.43% 1.93%, 20.79% 4.52%, 17.94% 13.21%, 14.86% 27.65%, 14.14% 43.2%, 14.3% 58.94%, 15.24% 68.43%, 16.19% 75.53%, 17.55% 81.68%, 19.28% 89.44%, 20.97% 93.77%, 23.09% 96.66%, 25.15% 97%);
+    }
+    .initial-cover {
+        left: 100px;
+    }
+    .initial-text {
+        left: -800px;
+    }
+    .cup-path::after {
+        top: -40px;
+        right: 542px;
+        bottom: 0;
+        left: -300px;
+    }
+    .end-icecream {
+        transform: translateX(260px);
+    }
+    .end-cover {
+        transform: translateX(900px);
+    }
+    .initial-text-end {
+        transform: translateX(920px);
+    }
+    .cup-path::after {
+        top: 0px;
+        right: 572px;
+        bottom: 0;
+        left: 40px;
+    }
+
+    /*oferta*/
+    .bg-offer {
+        height: 660px;
+        background-size: cover;
+    }
+
+    /*historia*/
+    .lh-lg {
+        line-height: 1.5 !important;
+    }
 }
